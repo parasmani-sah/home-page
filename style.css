@@ -1,0 +1,134 @@
+
+@font-face{
+    font-family: 'Freadkon';
+    src: url(./fonts/FredokaOne.ttf);
+}
+@font-face{
+    font-family: 'Roboto';
+    src: url(./fonts/Roboto.ttf);
+}
+@font-face{
+    font-family: 'RubikBold';
+    src: url(./fonts/Rubik-Bold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    background: border-box;
+}
+
+/* Style of navigation bar */
+
+header{
+    height: 100vh;
+}
+.color-right{
+    position: absolute;
+    width: 38%;
+    height: 80vh;
+    top: 0;
+    left: 62%;
+    background-color: #50bcf2;
+    z-index: -1;
+}
+nav{
+    display: grid;
+    grid-template-columns: 12% 1fr 1fr 12%;
+    min-height: 10vh;
+    align-items: center;
+}
+
+.logo{
+    grid-column: 2/3;
+    font-size: 22px;
+    font-family: 'Freadkon', sans-serif;
+}
+
+.nav-bar{
+    justify-self: end;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    padding: 25px;
+    color: black;
+    font-size: 12px;
+    font-weight: 550;
+    text-transform: uppercase;  
+}
+
+.nav-bar a:hover{
+    color: rgb(29, 29, 253);
+    transition: 0.4s;
+}
+
+/* Style of home section */
+
+section{
+    display: grid;
+    grid-template-columns: 12%  1fr 1fr 12%;
+    align-items: center;
+    min-height: 80vh;
+    padding-top: 4vh;
+}
+
+.sec{
+    grid-column: 2/3;
+    padding-bottom:10vh;
+}
+.sec h2{
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 25px;
+    color: #2aa5e2;
+}
+.sec h1{
+    font-size: 80px;
+    font-family: 'RubikBold', sans-serif;
+}
+.sec h1 span{
+    color: #2aa5e2;
+}
+.sec p{
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 30px;
+    letter-spacing: 1px;
+}
+
+.btn{
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: black;
+    font-weight: 600;
+    padding: 10px 30px;
+    text-align: center;
+    cursor: pointer;
+    border: 1.2px solid #2aa5e2;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.btn:hover{
+    background-color: #2aa5e2;
+    transition: 0.2s;
+}
+
+.right-side{
+    justify-self: end;
+    height: 80vh;
+    width: 100%;
+    background-color: #d7dbdb;
+}
+.right-side img{
+    height: 76vh;
+    padding-top: 4vh;
+    padding-left: 120px;
+}
